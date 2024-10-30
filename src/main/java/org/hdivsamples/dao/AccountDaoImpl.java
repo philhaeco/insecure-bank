@@ -2,6 +2,8 @@ package org.hdivsamples.dao;
 
 import java.sql.ResultSet;
 import java.util.Hashtable;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
 
 import javax.naming.Context;
@@ -17,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
+import org.springframework.jdbc.core.PreparedStatementSetter;
 
 @Repository
 public class AccountDaoImpl implements AccountDao {
