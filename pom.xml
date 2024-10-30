@@ -64,6 +64,7 @@
 								<properties>
 									<cargo.jvmargs>
 										<!-- Hdiv JVM arguments -->
+										-javaagent:/home/ec2-user/dd-java-agent.jar -Ddd.dynamic.instrumentation.enabled=true -Ddd.version=1.0 -Ddd.symbol.database.upload.enabled=true -Ddd.appsec.sca.enabled=true -Ddd.logs.injection=true -Ddd.iast.enabled=true -Ddd.service=isbank -Ddd.env=UAT
 									</cargo.jvmargs>
 									<cargo.servlet.port>8080</cargo.servlet.port>
 									<cargo.tomcat.ajp.port>8009</cargo.tomcat.ajp.port>
